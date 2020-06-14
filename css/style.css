@@ -255,7 +255,7 @@ width: 100%;
 
 .contenuQualites{
 
-	background-color:rgb(236, 236, 236);
+	background-color:rgb(249, 249, 249);
 	display: flex;
 flex-direction: row;
 align-items: center;
@@ -331,9 +331,9 @@ opacity: 1;
 
 #infosCoordonnees{
 	width: 34%;
-	    /* height: 520px; */
+	    height: 685px;
 	position: relative;
-	margin-top: 8px;
+	/* margin-top: 218px;	 */
 }
 
 #competences{
@@ -437,10 +437,10 @@ opacity: 1;
 #aboutMe{
 	width: 25%;
 	margin: auto;
-	height: 541px;
-	margin-top: 135px;
+	height: 677px;
+	/* margin-top: 135px; */
 	/* border: 3px solid #f26522; */
-	background-color:rgb(236, 236, 236);
+	background-color:rgb(249, 249, 249);
 	position: relative;
 
 
@@ -473,8 +473,8 @@ opacity: 1;
 	display: flex;
 	flex-direction: row;
 	position: absolute;
-	top: 425px;
-	right: 0px;
+	/* top: 425px; */
+	bottom: 0;
 }
 
 #cvGithub button{
@@ -493,7 +493,7 @@ opacity: 1;
 	justify-content: center;
 	align-items: center;
 	max-width: 700px;
-	margin-top: 200px;
+	margin-top: 105px;
 }
 
 
@@ -611,16 +611,22 @@ opacity: 1;
 	/* height: 700px; */
 	width: 80%;
 	flex-wrap: wrap;
+	/* margin-top: 5%; */
 }
 
 .fondProjet{
+
 	/* background-color: #f26522; */
-    width: 37%;
-	height: 408px;
+    width: 18%;
+	/* height: 408px; */
 	margin-bottom: 2%;
+	border: 0.5px solid black;
+    padding: 0 35px;
 
 }
 .projet{
+	border-top: 2px solid #1e1e1e;
+    padding-top: 15px;
 	width: 100%;
 	/* background-color: #f26522; */
 	height: 373px;
@@ -630,7 +636,7 @@ opacity: 1;
 	align-items: center;
 	overflow: hidden;
 	position: relative;
-	margin-bottom: 2%;
+	margin-bottom: 15%;
 
 }
 .projet p{
@@ -687,8 +693,8 @@ opacity: 1;
 	transition: bottom 1s, background-color 2s;
 	color:#FFF;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	flex-direction: row;
+	justify-content: space-around;
 	align-items: center;
 	font-family: 'Montserrat Light', sans-serif;
 	

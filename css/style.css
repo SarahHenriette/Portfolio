@@ -175,10 +175,11 @@ width: 100%;
 #coordonnees{
 	position: relative;
   /*  background-color: yellow;*/
-    height: 465px;
-	width: 80%;
+	height: 685px;;
+	width: 90%;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
 	/* flex-wrap: wrap; */
 	/* padding-top:5%; */
 	 
@@ -259,7 +260,8 @@ width: 100%;
 	display: flex;
 flex-direction: row;
 align-items: center;
-margin: 5px 0;
+/* margin: 5px 0; */
+height: 60px;
 	/* background-color:rgb(236, 236, 236);
 	    display: flex;
     flex-direction: row;
@@ -333,6 +335,9 @@ opacity: 1;
 	width: 34%;
 	    height: 685px;
 	position: relative;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 	/* margin-top: 218px;	 */
 }
 
@@ -609,7 +614,7 @@ opacity: 1;
 	flex-direction: row;
 	justify-content: space-around;
 	/* height: 700px; */
-	width: 80%;
+	width: 90%;
 	flex-wrap: wrap;
 	/* margin-top: 5%; */
 }

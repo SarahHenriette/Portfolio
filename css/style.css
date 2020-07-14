@@ -8,10 +8,12 @@ body{
 	scroll-behavior: smooth;
 	background-color: rgb(30, 30, 30);
 	transition: background-color 2s ease;
+
+
+	
 }
 
 #header{
-	/*background-color: rgb(30, 30, 30);*/
 	width: 100%;
 	height: 740px;
 	overflow: hidden;
@@ -19,7 +21,6 @@ body{
 	margin: auto;
 	background-origin: border-box;
 	background-position: bottom -170px right 0;
-	/*background-image: url("../../portfolio/html/fond.jpg");*/
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
@@ -27,6 +28,10 @@ body{
 	align-items: center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+	width: 100vw;
+	height: 100vh;
+	
+	
 }
 
 
@@ -62,33 +67,14 @@ nav li a {
 	font-family: 'Montserrat Alternates', sans-serif;
 	text-align: center;
 	width: 120px;
+	text-decoration: none;
 
 }
 
 /**********************************PARTIE HEADER*********************************************/
 
-#header div {
-	height: 1px;
-    background-color: #f26522;
-    width: 468px;
-    margin-bottom: -26px;
-    /*animation: ligne 4s 1;*/
-    opacity: 0;
-   
-}
-/*
-@keyframes ligne{
-	0%{
-	opacity: 1;
-		width: 1px;
-	
-	}
-	100%{
-		background-color: transparent;
-		
-	}
-}
-*/
+
+
 #header h1, header p, nav li a{
 	color: #FFF
 }
@@ -110,14 +96,6 @@ nav li a {
 	font-size: 95px;
 	font-weight: 100;
 }
-/*
-@keyframes Elise{
-	0%{
-		color:transparent;
-		margin-bottom: -40px;
-	}
-
-}*/
 
 
 #header p {
@@ -127,21 +105,13 @@ nav li a {
 	margin-top: 0;
 	animation: stage 2s ;
 }
-/*
-@keyframes stage{
-	25%{
-		color: transparent;
-	}
-}
 
 
-*/
 /*************************PARTIE INFOS*****************************************/
 
 #infos{
-	/*background-color: rgba(30, 30, 30);*/
 	width: 100%;
-	height: 800px;
+	height: 750px;
 	max-width: 1600px;
 	margin: auto;
 	display: flex;
@@ -149,336 +119,138 @@ nav li a {
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
-	/*margin-top: 2%;*/
-
+	width: 100vw;
 }
 
 #photo{
-	width: 33%;
+	width: 25%;
 	display: flex;
 	justify-content: flex-end;
-	/*padding-right: 2%;*/
-	
-	
 }
+
 #photo div {
-	
-	width: 90%;
+	width: 337px;
 	display: flex;
 	justify-content: center;
 	overflow: hidden;
+	box-shadow: 0px 2px 7px #c9c9c9;
 }
+
 #photo div img{
 width: 100%;
 }
 
 #coordonnees{
 	position: relative;
-  /*  background-color: yellow;*/
-	height: 685px;;
-	width: 90%;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	/* flex-wrap: wrap; */
-	/* padding-top:5%; */
-	 
+	width: 30%;
+	    height: 650px;
+
 }
 
 #coordonnees p, #coordonnees address, #coordonnees div{
 	font-family: 'Montserrat', sans-serif;
-	/*width: 85%;*/
 }
 
-#coordonnees p{
-	text-align: justify;
-}
 
-#coordonnees address{
-	display: none;
-}
-
-#coordonnees div i , #coordonnees div p {
+.info i , #coordonnees div p {
 	margin-left: 15px;
 }
-#coordonnees div .fas{
-	/*color: #ce5b24;*/
-	height: 21px;
-	/*margin-left: 15px;*/
-	position: relative;
-}
-#coordonnees div .fas:hover, #coordonnees div .fab:hover{
-	/*color: #f26522;*/
-}
-#coordonnees div .fab{
-/*	color: #ce5b24;*/
-	height: 21px;
-	/*margin-left: 15px;*/
-}
-.reseau{
-	/*display: none;*/
-/*	position: absolute;*/
-	top: 50px;
-	left: 10px;
+
+
+.coordonnee a {
+	text-decoration: none;
+	color: #1e1e1e;
 }
 
-
-/*#trait{
-	width: 3px;
-    height: 465px;
-	background-color: #f26522;
-}*/
-#reseau{
-
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	    /*height: 26px;*/
-	    margin-top: 15px;
-	    width: 80%;
+.lien{
+	/* background-color: #1e1e1e; */
 }
 
-
-#up{
-	display: none;
-	justify-content: center;
-	align-items: center;
-	    height: 26px;
-	     margin-top: 15px;
+.lien div {
+	background-color: #1e1e1e;
+    height: 59px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/*#traitInfos{
-	height: 1px;
-	width: 400px;
-	background-color: #f26522;
-	margin-top: 15px;
-}*/
+.lien i{
+	color: #fff;
+	margin-left: 0;
+}
+.lien:hover{
+	background-color: #f38747 ;
+}
 
-.contenuQualites{
+.lien p{
+	font-size: 20px;
+	font-weight: 900;
+	text-transform: uppercase;
+}
 
-	background-color:rgb(249, 249, 249);
-	display: flex;
+#metier{
+	font-size: 18px;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+.coordonnee{
+
+display: flex;
 flex-direction: row;
 align-items: center;
-/* margin: 5px 0; */
+width: 90%;
 height: 60px;
-	/* background-color:rgb(236, 236, 236);
-	    display: flex;
-    flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	margin: 5px 5px;
-	width: 31%;
-	flex-wrap: wrap; */
-
+box-shadow: 0px 1px 7px #c9c9c9;
 	
 }
 
-.reseau{
-
-font-size: 15px;
-animation-duration: 1s;
-  animation-name: colorQualites;
-  overflow: hidden;
-opacity: 1;
-}
-
-
-
-
-@keyframes colorQualites {
-  0% {opacity: 0 ; }
-  50%{opacity: 0;}
- 
-  100% { opacity: 1; }
-}
-
-/* @keyframes qualites {
-  0% { width : 20%; height: 50px; background-color:rgb(199, 199, 199);}
-
-
- 
-  100% { width: 100%; height: 50px ; background-color:rgb(236, 236, 236);}
-} */
-
-#age{
+#qualites {
 	font-size: 18px;
-	font-weight: 500;
-}
-
-.infosPerso{
-	width: 45%;
-	height: 200px;
-	background-color: #a2a2a2;
-}
-
-.contenair{
-	/*background-color: yellow;*/
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	width: 80%;
-	height: 200px;
-	margin-top: 1%;
-}
-.contenairReseaux{
-	width: 20%;
-	height: 100px; 
-	background-color: #fff7f3;
-	display: flex; 
-	flex-direction: row; 
-	justify-content: center;
-	align-items: center;
-}
-
-#infosCoordonnees{
-	width: 34%;
-	    height: 685px;
-	position: relative;
-	display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-	/* margin-top: 218px;	 */
-}
-
-#competences{
-	width: 75%;
-	height: 415px;
-	background-color:rgb(236, 236, 236);
-	animation-duration: 1s;
-	margin-left:0;
-	padding-top: 20px;
-   animation-name: competences; 
-}
-
-@keyframes competences {
-  0% {margin-left: 100px;}
-
- 
-  100% { margin-left: 0;}
-}
-
-#competences h2{
-	width: 80%;
-	margin: 10px auto;
-	font-family: 'Montserrat', sans-serif;
-}
-
-#competences p{
-	width: 80%;
-	font-size: 21px;
-	font-family: 'Montserrat', sans-serif;
-	margin: 10px auto;
-	
-}
-.contentInfos{
-	display: none;
-	margin-left:0;
-   animation-name: contentInfos; 
-}
-
-@keyframes contentInfos {
-	0% {margin-left: 100px;}
-
- 
-	100% { margin-left: 0;}
-  }
-.contentInfos.active{
-	display: block;
-	margin-left:0;
-	animation-name: contentInfos; 
-}
-/* .active a {
-
-	
-	background-color: #f26522;
-	color : #fff;
-} */
-
-.buttonInfosCompetences {
-	display: flex;
-	flex-direction: row;
-	position: absolute;
-    bottom: 0;
-	
-
-}
-.buttonInfosCompetences li{
-	list-style-type: none;
-
-	height: 50px;
-	margin-right: 10px;
-}
-.buttonInfosCompetences li a{
-	text-decoration: none;
-	font-family: 'Montserrat', sans-serif;
-	padding: 15px 30px;
-}
-/* .lienCoordonnee{
-	background-color: rgb(30, 30, 30);
-	color: rgba(255, 255, 255, 0.76);
-} */
-.lienCoordonneeb{
-	text-decoration: none;
-	color: #000;
-	border: #f26522;
-	padding: 12px 14px;
-	/* background-color: rgb(30, 30, 30);
-	color: rgba(255, 255, 255, 0.76); */
-}
-.lienCoordonnee:hover, .lienCoordonneeb:hover {
-	background-color:#f5d9cc;
-}
-
-#coordonnees span{
-	font-family: 'Montserrat Thin Bold', sans-serif;
+	font-weight: 900;
 	text-transform: uppercase;
-	font-weight: 600;
-
 }
 
 /**************PARTI ABOUT ME*******/
 
 #aboutMe{
-	width: 25%;
+	width: 33%;
 	margin: auto;
-	height: 677px;
-	/* margin-top: 135px; */
-	/* border: 3px solid #f26522; */
-	background-color:rgb(249, 249, 249);
+	height: 646px;
+	background-color:rgb(255, 255, 255);
 	position: relative;
-
-
+    box-shadow: 0px 2px 7px #c9c9c9;
 }
 
 #aboutMe h2{
 	text-align: left;
 	font-family: 'Montserrat Thin ', sans-serif;
 	font-size: 35px;
-	/* width: 80%; */
 	margin: auto;
-	/* margin-top: 12%; */
 	padding: 10px 0;
 	background-color: rgb(30, 30, 30);
 	color:#fff;
 	padding-left: 18px;
-
 }
 
 #aboutMe p{
 	text-align: justify;
-	font-family: 'Montserrat Thin ', sans-serif;
+	font-family: 'Montserrat ', sans-serif;
+	font-size: 20px;
 	width: 80%;
 	margin: auto;
 	margin-top: 25px;
-
 }
 
 #cvGithub{
 	display: flex;
 	flex-direction: row;
 	position: absolute;
-	/* top: 425px; */
 	bottom: 0;
 }
 
@@ -490,7 +262,7 @@ opacity: 1;
 
 /**************************PARTIE COMPETENCES***********************************/
 
-#b{
+#competences{
 	width: 40%;
 	display: flex;
 	flex-direction: row;
@@ -521,7 +293,6 @@ opacity: 1;
 }
 .desactive{
 	background-color: #fff;
-	/* border-bottom: #f26522 solid 0.5px; */
 }
 
 #competencesAcquises{
@@ -533,40 +304,30 @@ opacity: 1;
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 2%;
+	width: 100vw;
 	
 }
 
 
-
-#competencesAcquises #a {
+#competencesAcquises #encartCompetencesPortfolio {
 	margin-top: 50px;
 	height: 400px;
 	width: 20%;
 	background-color: rgb(255, 255, 255);
 	max-width: 400px;
+	position: relative;
 }
 
 
-@keyframes titreC{
-	0% {opacity:0 }
-
-
-	100% {  opacity:1}
-  }
-
-#competencesAcquises #a p{
+#competencesAcquises #encartCompetencesPortfolio p{
 	font-family: 'Righteous', cursive, sans-serif;
 	font-size: 37px;
-	color: #58514d;
 	text-transform: uppercase;
-	
 	text-align: center;
 	display: block;
-	
-
 }
 
-#competencesAcquises #a p span{
+#competencesAcquises #encartCompetencesPortfolio p span{
 	font-size: 17px;
 
 }
@@ -576,26 +337,24 @@ opacity: 1;
 	color: #1b1b1b;
 }
 
-@keyframes titreCompetence {
-	0% {margin-top: 0;opacity:1 }
-	50% {margin-top: -25;opacity:0 }
 
-
-	100% { margin-top: -50px; opacity:0}
+  #rectanglePortfolio{
+	height: 80px; 
+	width:100%; 
+	position:absolute;
+	background-color: #1e1e1e;
+	left: 0;
+	right: 0;
+	margin: auto; 
   }
 /**********************************PARTIE PORTFOLIO******************************/
 
-#portfolio, #portfolioGrafikart{
+#portfolio{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	/*background-color: #FFF*/
-	/*background-color:rgb(245, 113, 42);*/
-	/*background-color: rgb(216, 214, 214);*/
-
-		width: 100%;
-	
+	width: 100%;
 	max-width: 1600px;
 	margin: auto;
 	margin-top: 200px;
@@ -605,7 +364,6 @@ opacity: 1;
 	width: 30%;
 	height: 100px;
 	margin: auto;
-
 	width:100%;
 	
 }
@@ -613,27 +371,23 @@ opacity: 1;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	/* height: 700px; */
 	width: 90%;
 	flex-wrap: wrap;
-	/* margin-top: 5%; */
+	margin-bottom: 5%;
 }
 
 .fondProjet{
-
-	/* background-color: #f26522; */
     width: 18%;
-	/* height: 408px; */
 	margin-bottom: 2%;
-	border: 0.5px solid black;
-    padding: 0 35px;
+	padding: 0 35px;
+	box-shadow: 0px 2px 7px #c9c9c9;
+
 
 }
 .projet{
 	border-top: 2px solid #1e1e1e;
     padding-top: 15px;
 	width: 100%;
-	/* background-color: #f26522; */
 	height: 373px;
 	display: flex;
 	flex-direction: column;
@@ -652,6 +406,8 @@ opacity: 1;
 .projet .survol img{
 	width: 20%;
 	margin-bottom: 5%;
+	position: absolute;
+	top:42px;
 }
 .infosProjet{
 	width: 50%;
@@ -660,23 +416,21 @@ opacity: 1;
 }
 
 .imageProjet{
-	/* width: 50%; */
-	/*height: 321px;*/
 	overflow: hidden;
 }
 
 .imageProjet img{
 	width: 100%;
-	/*height: 100%;*/
 }
 
 #titrePortfolio{
-	font-size: 17px;
-	color: #58514d;
-	font-family: 'Righteous', cursive, sans-serif;
-	text-transform: uppercase;
-	
-	text-align: left;
+	font-family: 'Montserrat Thin', sans-serif;
+	color: #fff;
+	position:absolute; 
+	font-weight: 700;
+	left: 0;
+	right: 0;
+	margin: 20px 3px;
 }
 
 #traitPortfolio{
@@ -711,272 +465,197 @@ opacity: 1;
 }
 
 .survol a{
-font-family: 'Montserrat Bold', sans-serif;
-text-decoration: none;
-padding: 10px 20px;
-color: #FFF;
-background-color: #f38747;
-margin-top: 10px;
+	font-family: 'Montserrat Bold', sans-serif;
+	text-decoration: none;
+	padding: 10px 20px;
+	color: #FFF;
+	background-color: #f38747;
+	margin-top: 10px;
+}
+
+.survol img{
+	width: 30px;margin-right: 10px;
 }
 
 .survol:hover{
 	
 	background-color: #1e1e1e;
-opacity: 1;
-bottom: 0px;
+	opacity: 1;
+	bottom: 0px;
+}
+
+.titreProjet{
+	display: flex;flex-direction: row; justify-content: space-between;align-items: center;HEIGHT: 77PX;
+}
+
+.nomProjet{
+	font-family: 'Montserrat Thin Bold', sans-serif; 
+	font-size: 18px;
 }
 
 
-/*************************************PARTIE CANDIDATURE*********************************/
-
-
- #candidature{
- 	background-color:#FFF;
- 	display: flex;
-    flex-direction: column;
-
-    align-items: center;
-    	width: 100%;
-	height: 800px;
-	max-width: 1600px;
-	margin: auto;
- }
-
- #ulCandidature{
- 	list-style-type: none;
- 	display: flex;
- 	flex-direction: row;
- 	justify-content: center;
- 	width: 60%;
-	padding-left: 0;
- }
-
-
- #ulCandidature li{
- 	font-size: 25px;
- 	font-family: 'Montserrat', sans-serif;
- 	padding: 5px 15px;
- 	border-bottom: 1px solid #f26522;
- 	height: 51px;
- }
-
-
-#sectionLettreMotivation{
-	font-family: 'Montserrat', sans-serif;
-	width: 50%;
-	margin: 0px auto;
-	text-align: justify;
-
-
-}
-
-
- #candidature button{
- 	width: 250px;
- 	height: 50px;
- 	background-color:  #f26522;
- 	border:none;
- 	font-family: 'Montserrat', sans-serif;
- 	font-size: 15px;
- 	color: #FFF;
- }
-
- #candidature input{
-	display: none;
-}
-
-
-#contenueRebriqueCv{
-	width: 71%;
-	border-top: solid 2px #f5712a;
-	padding-bottom: 58px;
-	margin-bottom: 6%;
-	padding-top: 3%;
-}
-#labelsRebriqueCv{
+footer{
 	width: 100%;
+	height: 50px;
+	background-color: #1e1e1e;
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
-	margin-top: 10%;
+	align-items: center;
 }
-#labelsRebriqueCv label{
-		font-family: 'Montserrat', sans-serif;
-	padding: 15px 22px;
-	position: relative;
-	overflow: hidden;
-
+footer p{
+	color: #fff;
+	/* font-family: 'Montserrat', sans-serif; */
 }
-
-
-#candidature #lettreDeMotivation:checked ~ #labelsRebriqueCv #r0,
-#candidature #formations:checked ~ #labelsRebriqueCv #r1,
-#candidature #experiences:checked ~ #labelsRebriqueCv #r2,
-#candidature #diplomes:checked ~ #labelsRebriqueCv #r3,
-#candidature #divers:checked ~ #labelsRebriqueCv #r4{
-	   background-color: #f5712a;
-    
-     color:#FFF;
-
-}
-
-#candidature #lettreDeMotivation:checked ~ #labelsRebriqueCv #r0 .fa-caret-down,
-#candidature #formations:checked ~ #labelsRebriqueCv #r1 .fa-caret-down,
-#candidature #experiences:checked ~ #labelsRebriqueCv #r2 .fa-caret-down,
-#candidature #diplomes:checked ~ #labelsRebriqueCv #r3 .fa-caret-down,
-#candidature #divers:checked ~ #labelsRebriqueCv #r4 .fa-caret-down{
-
-opacity: 1;
-}
-
-#candidature #lettreDeMotivation:checked ~ #contenueRebriqueCv div:not(#sectionLettreMotivation),
-#candidature #experiences:checked ~ #contenueRebriqueCv div:not(#sectionExperiences),
-#candidature #diplomes:checked ~ #contenueRebriqueCv div:not(#sectionDiplomes),
-#candidature #formations:checked ~ #contenueRebriqueCv div:not(#sectionFormations),
-#candidature #divers:checked ~ #contenueRebriqueCv div:not(#sectionDivers){
-	display: none;
-}
-
-#sectionLettreMotivation,#sectionExperiences, #sectionDiplomes, #sectionFormations, #sectionDivers{
-	
-	max-width: 2072px;
-    margin: auto;
-   	margin-top: 76px;
-   	font-family: 'Montserrat', sans-serif;
-	width: 90%;
-	margin: 0px auto;
-	text-align: justify;
-
-}
-
-#sectionDivers p span{
-	margin-left: 15px;
-}
-
-#sectionDivers p .fas{
-
-}
-
-
-
-
 
 /**********************************************************MEDIA QUERIES************************************************************************/
 
-
-
-@media screen and (max-width:2034px) {
+@media screen and (max-width: 9000px) {
 	#header{
+		width: 100vw;
+		height: 100vh;
+	}
+
+}
+@media screen and (max-width: 1350px) {
 	
-		background-position: bottom -21px right 0px;
+
+	#coordonnees {
+		height: 597px;
+	}
+
+	#aboutMe{
+		height: 597px;
+
 	}
 }
 
-@media screen and (max-width:1527px) {
-	#qualites {
-  
-    font-size: 38px;
-}
 
+@media screen and (max-width: 1200px) {
 
-@media screen and (max-width:1400px) {
-#portfolio {
-	height: 1002px;
-}
-
-#projets{
-	height: 758px;
-    flex-wrap: wrap;
-}
-
-.projet {
-    width: 38%;
-    }
-}
-
-@media screen and (max-width:1025px) {
-
-	#portfolio{
-		height: 975px;
+	#coordonnees {
+		height: 597px;
 	}
 
-	#projets{
-		flex-wrap: wrap;
-		height: 905px;
-	}
+	#aboutMe{
+		height: 597px;
 
-	.projet{
-		width: 43%;
 	}
-	#contenueRebriqueCv {
-    width: 100%;
-}
 }
 
-@media screen and (max-width:770px) {
+
+
+
+/*************************************MEDIA QUERIES***************************************************/
+
+@media screen and (max-width: 1100px) {
+	#header{
+		height: 1388px;
+		max-width: 1600px;
+	}
 
 	#infos{
 		flex-direction: column;
-		justify-content: center;
-		height: 940px;
+		height: 4471px;
+		margin-bottom: 5%;
 	}
 
 	#photo{
-		width: 33%;
+		width: 98%;
 		justify-content: center;
-    	margin-bottom: 6%;
+	}
+
+	#aboutMe{
+		width: 88%;
+		margin: 5% auto;
+	    height: 1436px;
+
+	}
+
+	#aboutMe p{
+		font-size: 37px;
+	}
+
+	#infosCoordonnees{
+		width: 88%;
+		height: 1085px;
+
+	}
+
+	#coordonnees {
+	
+		width: 88%;
+		height: 1085px;
+
+	}
+
+	.coordonnee{
+		width: 100%;
+	}
+	#competencesAcquises #encartCompetencesPortfolio{
+		width: 34%;
+	}
+
+	#competences{
+		width: 70%;
+	}
+
+	.fondProjet {
+		width: 40%;
+	}
+
+	.projet{
+		width: 100%;
+	}
+
+	#coordonnees div i, #coordonnees div p {
+		font-size: 30px;
+	}
+
+	.coordonnee{
+		height: 110px;
+		margin: 10px 0;
+
+	}
+
+	#photo div {
+		width: 90%;
+	}
+  }
+
+  
+@media screen and (max-width:750px) {
+
+	#header{
+		height: 810px;
+		
+	}
+	#header h1 {
+		font-size: 45px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
 	}
 	
-	#photo img {
-    width: 65%;
-	}
-
-	#trait {
-    width: 82%;
-    height: 5px;
-   }
-
-   #coordonnees {
-    width: 82%;
-	}
-	#qualites {
-  
-    font-size: 50px;
-}
-	#coordonnees p {
-    width: 100%;
-}
-	.projet{
-		width: 45%;
-	}
-
-	#labelsRebriqueCv{
-		width: 91%;
-	}
-
-
-
-
-}
-
-
-@media screen and (max-width:648px) {
-	#header h1 {
-		font-size: 48px;
+	#header h1 span {
+		font-size: 66px;
+		margin-bottom: 3%;
 	}
 	#header p {
-		font-size: 20px;
+		font-size: 17px;
+    width: 89%;
 	}
 
 	#photo {
-		width: 88%;
+		width: 97%;
 	}
 
 	#qualites {
 		font-size: 30px;
 	}
 	#portfolio {
-   		height: 1653px;
+		   height: 1653px;
+		   margin-top: 15px;
 	}
 	#projets {
     	height: 1441px;
@@ -994,31 +673,45 @@ opacity: 1;
     width: 74%;
 	}
 
-	#labelsRebriqueCv {
- 
-    flex-direction: column;
-  	margin-bottom: 15px;
- 	}
-
- 	#r0{
- 		border-top: solid 3px #f5712a;
- 	}
- 	#labelsRebriqueCv label {
- 	text-align: center;
-      border-left: solid 3px #f5712a;
-    border-bottom: solid 3px #f5712a;
-    border-right: solid 3px #f5712a;
- 	}
+	#infos{
+		height: 3500px;	}
 
 
- 	#candidature #lettreDeMotivation:checked ~ #labelsRebriqueCv #r0, 
- 	#candidature #formations:checked ~ #labelsRebriqueCv #r1,
- 	#candidature #experiences:checked ~ #labelsRebriqueCv #r2,
- 	#candidature #diplomes:checked ~ #labelsRebriqueCv #r3, 
- 	#candidature #divers:checked ~ #labelsRebriqueCv #r4 {  
+	   #aboutMe p {
+		font-size: 24px;
+	}
 
- 	  	text-align: center;
- 	  }
+	#coordonnees{
+		height: 1195px;
 
+	}
 
-}}
+	.case{
+		width: 43%;
+		margin-left: 0;
+	}
+
+	#competencesAcquises {
+		height: 873px;
+	}
+	#competencesAcquises #encartCompetencesPortfolio {
+		width: 76%;
+	}
+
+	.fondProjet {
+		width: 85%;
+	}
+
+	.projet {
+		width: 100%;
+	}
+
+	#competences {
+		width: 80%;
+		display: flex;
+		justify-content: space-around;
+	}
+	#coordonnees div i, #coordonnees div p {
+		font-size: 17px;
+	}
+}

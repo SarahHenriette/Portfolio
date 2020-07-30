@@ -1,0 +1,309 @@
+body{
+    margin: 0;
+}
+
+#header{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+	background-color: #1e1e1e;
+	margin: auto;
+
+}
+
+#header i{
+    color:#f26522;
+}
+
+#header p {
+
+    color:white;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+
+
+nav{
+	width: 100%;
+	max-width: 1600px;
+	margin: auto;
+	left:0;
+	right: 0;
+	height: 50px;
+	background-color: #1e1e1e;
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	z-index: 1000;
+}
+
+nav li{
+	list-style-type: none;
+	width: 120px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	transition :  width 1s;
+}
+
+nav li:hover{
+	background-color: #f26522;
+	width: 160px;
+}
+
+
+nav li a {
+	display: block;
+	font-family: 'Montserrat Alternates', sans-serif;
+	text-align: center;
+	width: 120px;
+    text-decoration: none;
+    color: #fff;
+	transition :  width 1s;
+}
+
+
+
+footer{
+	width: 100%;
+	height: 50px;
+	background-color: #1e1e1e;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer p{
+	color: #fff;
+	/* font-family: 'Montserrat', sans-serif; */
+}
+
+#portfolio{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	max-width: 1600px;
+	margin: auto;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+.fondProjet{
+	width: 40%;
+	height: 630px;
+	margin-bottom: 2%;
+	padding: 0 35px;
+	box-shadow: 0px 2px 7px #c9c9c9;
+
+}
+
+#projets{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 90%;
+	flex-wrap: wrap;
+	margin-bottom: 5%;
+}
+
+.t {
+
+    display: flex;
+    flex-direction: row;
+}
+.projet{
+	border-top: 2px solid #1e1e1e;
+    padding-top: 15px;
+	width: 100%;
+	/* height: 576px; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	position: relative;
+	/* margin-bottom: 15%; */
+
+}
+.projet p{
+	font-family: 'Montserrat', sans-serif;
+	
+}
+
+.titreProjet{
+	display: flex;flex-direction: row; justify-content: space-between;align-items: center;HEIGHT: 77PX;
+}
+
+.titreProjet p{
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.coordonnee{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    height: 490px;
+    box-shadow: 0px 1px 7px #c9c9c9;
+    margin:  10px ;
+    padding-left: 20px;
+        
+    }
+
+    #comp{
+		width: 90%;
+		height: 3175px;
+	
+	}
+    #comp .projet{
+	flex-wrap: wrap;
+	
+	}
+
+	#comp .coordonnee{
+		flex-direction: column;
+		align-items: flex-start;
+
+	}
+
+	#comp .coordonnee p{
+		width: 95%;
+		font-size: 25px;
+		font-weight: 900;
+	}
+
+	#comp .competence{
+		width: 100%;
+		margin-top: 25px;
+		flex-direction: row;
+	}
+
+	#adobe{
+		height: 290px;
+	}
+#adobe .coordonnee{
+	height: 249px;
+}
+	.adobe{
+		/* background-color: #f26522; */
+		color: #fff;
+		overflow: hidden;
+	}
+
+	.iconLangage{
+		background-color: rgb(216, 214, 214);
+	}
+
+	#comp .competence .iconLangage, .adobe{
+		width: 30%;
+		height: 490px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	#comp .competence .iconLangage i{
+		color: #6e6e6e;
+	}
+
+
+	.competence{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#formation{
+		height: 460px;
+	}
+	#formation .coordonnee{
+		height: 80px;
+	}
+	#formation .coordonnee p{
+		font-size: 23px;
+	}
+
+	#formationDev{
+		font-weight: 700;
+	}
+
+	#experience {
+		padding-top: 0;
+	}
+
+	#experience .coordonnee{
+		height: 515px;
+		margin: 0;
+		background-color: #0b0b0b;
+		width: 100%;
+	}
+
+	
+	#experience .coordonnee p{
+		font-size: 35px;
+		text-align: center;
+		color: #fff;
+	}
+
+	#experience .coordonnee p #date{
+		font-size: 25px;
+	
+	}
+
+	#experience .coordonnee p #dev{
+		font-size: 37px;
+		text-transform: uppercase;
+		font-weight: 900;
+	
+	}
+
+	#experience .coordonnee p #lieu{
+		font-size: 41px;
+		font-weight: 900;
+	
+	}
+
+	#loisir .projet{
+		height: 500px;
+		/* background-color: #0b0b0b; */
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	
+	}
+	#loisir .projet div{
+		width: 50%;
+		text-align: center;
+	}
+	#loisir i {
+		color: #000;	}
+
+	#portrait{
+		overflow: hidden;
+		height: 500px;
+	}
+
+	#portrait img{
+		width: 100%;
+		margin-top: 48px;
+	}
+
+	#photo2{
+		/* background-color: #fcd6c4; */
+	}
+
+	#photo2 .titreProjet p{
+/* color: #f36d57; */
+	}

@@ -5,12 +5,124 @@ html{
 
 body{
 	margin: 0;
-	scroll-behavior: smooth;
-	background-color: rgb(30, 30, 30);
-	transition: background-color 2s ease;
+	/* background-color: rgb(30, 30, 30); */
+	transition: background-color 2s ease;	
+}
 
 
-	
+#loader-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	overflow: hidden;
+}
+
+.no-js #loader-wrapper {
+    display: none;
+}
+#loader {
+	display: block;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	width: 150px;
+	height: 150px;
+	margin: -75px 0 0 -75px;
+	border-radius: 50%;
+	border: 3px solid transparent;
+	border-top-color: #f26522;
+	animation: spin 1.7s linear infinite;
+	z-index: 11;
+
+}
+
+#loader:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #ff6e36;
+    animation: spin-reverse .6s linear infinite;
+  }
+
+#loader:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #e38b40;
+    animation: spin 1s linear infinite;
+  }
+
+
+  @keyframes spin{
+	0% { 
+	 transform :rotate(0deg);
+	}
+	100% {
+	   transform :rotate(360deg);
+	}
+  }
+
+  @keyframes spin-reverse{
+	0% { 
+	   transform : rotate(0deg);
+	}
+	100% {
+	   transform: rotate(-360deg);
+	}
+  }
+
+  
+#loader-wrapper .loader-section {
+  position: fixed;
+  top: 0;
+  width: 51%;
+  height: 100%;
+  background: #222;
+  z-index: 10;
+}
+
+#loader-wrapper .loader-section.section-left {
+  left: 0;
+}
+
+#loader-wrapper .loader-section.section-right {
+  right: 0;
+}
+
+/* Loaded styles */
+
+.loaded #loader-wrapper .loader-section.section-left {
+  transform: translateX(-100%);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
+  transform: translateX(100%);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded #loader {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+.loaded #loader-wrapper {
+  visibility: hidden;
+  transform: translateY(-100%);
+  transition: all 0.3s 1s ease-out;
 }
 
 #header{
@@ -30,8 +142,7 @@ body{
 	background-repeat: no-repeat;
 	width: 100vw;
 	height: 100vh;
-	
-	
+	background-color: rgb(30, 30, 30); 
 }
 
 
@@ -46,9 +157,7 @@ nav{
 	position: fixed;
 	display: flex;
 	flex-direction: row;
-
 	z-index: 1000;
-
 }
 
 nav li{
@@ -57,18 +166,23 @@ nav li{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	transition :  width 1s;
 }
 
 nav li:hover{
 	background-color: #f26522;
+	width: 160px;
 }
+
+
 nav li a {
 	display: block;
 	font-family: 'Montserrat Alternates', sans-serif;
 	text-align: center;
 	width: 120px;
 	text-decoration: none;
-
+	transition :  width 1s;
 }
 
 /**********************************PARTIE HEADER*********************************************/
@@ -79,6 +193,9 @@ nav li a {
 	color: #FFF
 }
 
+.fondProjet header p{
+	color: #1e1e1e;
+}
 
 #header h1{
 	font-family: 'Montserrat Thin', sans-serif;
@@ -155,6 +272,9 @@ width: 100%;
 	font-family: 'Montserrat', sans-serif;
 }
 
+.info div{
+	width: 30px;
+}
 
 .info i , #coordonnees div p {
 	margin-left: 15px;
@@ -184,7 +304,8 @@ width: 100%;
 	margin-left: 0;
 }
 .lien:hover{
-	background-color: #f38747 ;
+	background-color: #1e1e1e;
+	transition: 1s linear;
 }
 
 .lien p{
@@ -192,6 +313,7 @@ width: 100%;
 	font-weight: 900;
 	text-transform: uppercase;
 }
+
 
 #metier{
 	font-size: 18px;
@@ -235,7 +357,8 @@ box-shadow: 0px 1px 7px #c9c9c9;
 	padding: 10px 0;
 	background-color: rgb(30, 30, 30);
 	color:#fff;
-	padding-left: 18px;
+	padding-left: 53px;
+	
 }
 
 #aboutMe p{
@@ -310,7 +433,7 @@ box-shadow: 0px 1px 7px #c9c9c9;
 
 
 #competencesAcquises #encartCompetencesPortfolio {
-	margin-top: 50px;
+	margin-top: 51.5px;
 	height: 400px;
 	width: 20%;
 	background-color: rgb(255, 255, 255);

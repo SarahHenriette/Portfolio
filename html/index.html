@@ -20,9 +20,19 @@
 </head>
 <body id="body">
 
+	<div id="loader-wrapper">
+		<div id="loader"></div>
+		
+		<div class="loader-section section-left"></div>
+		<div class="loader-section section-right"></div>
+		
+	  </div>
+
 	<nav id="nav">
-		<li ><a href="" class ="lienNav">infos</a></li>
-		<li ><a href="" class ="lienNav">portfolio</a></li>
+		<li ><a href="" class ="lienNav">Infos</a></li>
+		<li ><a href="" class ="lienNav">Portfolio</a></li>
+		<!-- <li ><a href="cv.html" class ="lienNav">CV</a></li> -->
+
 	</nav>
 
 	<header id="header">
@@ -39,15 +49,12 @@
 		<div id="aboutMe">
 
 			<h2>About me</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, corrupti? Ullam saepe eos itaque rem,
-				incidunt dolorem voluptas voluptate labore, at debitis voluptatum omnis hic. Architecto reiciendis
-				officia maiores natus?</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, corrupti? Ullam saepe eos itaque rem,
-				incidunt dolorem voluptas voluptate labore, at debitis voluptatum omnis hic. Architecto reiciendis
-				officia maiores natus?</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, corrupti? Ullam saepe eos itaque rem,
-				incidunt dolorem voluptas voluptate labore, at debitis voluptatum omnis hic. Architecto reiciendis
-				officia maiores natus?</p>
+			<p>Je suis <strong>Elise Rousseau</strong>, j'aime les arts et la creation. Tous ce qui touche au dessin, graphisme, 
+				communication visuelle sont des domaines auxquelles je suis particulièrement sensible. 
+				La preuve j'ai fais un <strong> CAP en communication graphique</strong> et j'ai ensuite fais une <strong> formation de dessinateur auteur de BD</strong>.</p>
+			<p> <strong>En 2018</strong> , j'ai découvert le métier de développeur web et eu un interêt particulier pour celui-ci. 
+				Le trouvant très stimulant, je me suis initiée en autodidacte à quelques bases, html, css et un peu de javascript</p>
+			<p>C'est en <strong>février 2019</strong> que j'ai commencé une formation de developpeur web junior, et j'y ai découvert la programmation pur et dure.  </p>
 
 		</div>
 
@@ -59,29 +66,29 @@
 					<p id="metier"><span>Developpeuse Front-End</span></p>
 					</p>
 				</div>
-				<div class="coordonnee info"><i class="fas fa-birthday-cake "></i>
+				<div class="coordonnee info"><div><i class="fas fa-birthday-cake "></i></div>
 					<p>26 ans</p>
 				</div>
-				<div class="coordonnee info"><i class="fas fa-at "></i>
+				<div class="coordonnee info"><div><i class="fas fa-at "></i></div>
 					<p class="reseau" id="mail">rousseauelise@live.fr</p>
 				</div>
-				<div class="coordonnee info"> <i class="fas fa-map-marker-alt "></i>
+				<div class="coordonnee info"> <div><i class="fas fa-map-marker-alt "></i></div>
 					<p class="reseau" id="addresse">11 Mail Victor Jarra - Noisy le grand</p>
 				</div>
-				<div class="coordonnee info"><i class="fas fa-phone "></i>
+				<div class="coordonnee info"><div><i class="fas fa-phone "></i></div>
 					<p class="reseau" id="numero">0618875937</p>
 				</div>
-				<div class="coordonnee info"><i class="fab fa-instagram "></i>
+				<div class="coordonnee info"><div><i class="fab fa-instagram "></i></div>
 					<p class="reseau" id="insta">Elise Rousseau</p>
 				</div>
 				<div class="coordonnee lien"><div><i class="fab fa-linkedin fa-2x"></i></div>
-					<p><a href="https://www.linkedin.com/in/elise-rousseau-0a791a116/"><strong>Linkdin</strong></a></p>
+					<p><a href="https://www.linkedin.com/in/elise-rousseau-0a791a116/" class="lienText"><strong>Linkdin</strong></a></p>
 				</div>
 				<div class="coordonnee lien"><div><i class="fab fa-github fa-2x"></i></div>
-					<p><a href="https://github.com/"> <strong> Github</strong></a></p>
+					<p><a href="https://github.com/" class="lienText"> <strong> Github</strong></a></p>
 				</div>
 				<div class="coordonnee lien"><div><i class="far fa-file-alt fa-2x"></i></div>
-					<p><a href="https://github.com/"><strong>Telecharger CV</strong></a></p>
+					<p><a href="cv.html" class="lienText"><strong>CV en ligne</strong></a></p>
 				</div>
 
 			</div>
@@ -117,35 +124,35 @@
 
 		<div id="projets">
 
-			<div class="fondProjet">
-				<div class="titreProjet">
+			<article class="fondProjet">
+				<header class="titreProjet">
 					<p class="nomProjet">Blog de Jean Forteroche
 					</p><i class="fab fa-php fa-2x"></i>
-				</div>
+				</header>
 				<div class="projet">
 					<div class="survol"><img src="LG-OP.jpg" ><a
 							href="http://blog-jean-forteroche.elise-rou.fr/">Voir le site</a></div>
 					<div class="imageProjet"><img src="projet4.PNG"></div>
 					<p>Blog de Jean Forteroche</p>
 				</div>
-			</div>
+			</article>
 
-			<div class="fondProjet">
-				<div class="titreProjet">
+			<article class="fondProjet">
+				<header class="titreProjet">
 					<p class="nomProjet">Location de vélo</p><i class="fab fa-js fa-2x"></i>
-				</div>
+				</header>
 
 				<div class="projet">
 					<div class="survol"><img src="LG-OP.jpg" ><a href="http://velib-cergypontoise.elise-rou.fr/">Voir le site</a></div>
 					<div class="imageProjet"><img src="projet3.PNG"></div>
 					<p>Application location de vélo</p>
 				</div>
-			</div>
+			</article>
 
-			<div class="fondProjet">
-				<div class="titreProjet">
+			<article class="fondProjet">
+				<header class="titreProjet">
 					<p class="nomProjet">Office de tourisme de Strasbourg</p><i class="fab fa-wordpress-simple fa-2x"></i>
-				</div>
+				</header>
 
 				<div class="projet">
 					<div class="survol"><img src="LG-OP.jpg" ><a
@@ -153,13 +160,13 @@
 					<div class="imageProjet"><img src="projet2.PNG"></div>
 					<p>Office de tourisme de Strasbourg</p>
 				</div>
-			</div>
+			</article>
 
-			<div class="fondProjet">
-				<div class="titreProjet">
+			<article class="fondProjet">
+				<header class="titreProjet">
 					<p class="nomProjet">Web Agency</p>
 					<div><i class="fab fa-html5 fa-2x"></i><i class="fab fa-css3-alt fa-2x"></i></div>
-				</div>
+				</header>
 
 				<div class="projet">
 					<div class="survol"><img src="LG-OP.jpg" >
@@ -167,13 +174,14 @@
 					<div class="imageProjet"><img src="projet1.PNG"></div>
 					<p>Web Agency</p>
 				</div>
-			</div>
+			</article>
 
 		</div>
 	</section>
 
 	<footer>
 		<p>&copy; 2020 Elise Rousseau - Portfolio<p>
+	
 	</footer>
 
 	<script src="https://unpkg.com/scrollreveal"></script>
